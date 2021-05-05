@@ -14,7 +14,7 @@ class minecraft {
     ensure => file,
     source => 'puppet:///modules/minecraft/minecraft.service',
   }
-  service {'minecraft'}
+  service {'minecraft'}:
     ensure => running,
     enabled => true,
     require => [Package['java],File['/etc/systemd/system/minecraft.service']],
