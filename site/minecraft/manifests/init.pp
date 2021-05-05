@@ -17,6 +17,5 @@ class minecraft {
   service { 'minecraft':
     ensure  => running,
     enabled => true,
-    required => [Package['java'],
   }
 }
