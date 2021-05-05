@@ -18,5 +18,5 @@ class minecraft {
     ensure => running,
     enabled => true,
     require => [Package['java'],
-  }  
+  }
 }
