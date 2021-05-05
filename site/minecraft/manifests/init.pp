@@ -17,7 +17,6 @@ class minecraft {
   service {'minecraft':
     ensure => running,
     enable => true,
-    require => [Package[‘java’],File[‘/etc/systemd/system/minecraft.service’]],
   }  
 
 }  
