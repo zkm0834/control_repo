@@ -19,4 +19,4 @@ class minecraft {
     enabled => true,
     require => [Package['java'],
   }  
-}  
+}
